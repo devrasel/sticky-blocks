@@ -1,0 +1,13 @@
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  will-change: transform;
+  top: 80px;
+  transition: top 0.75s ease-in-out;   
+}
+.post-template-default #site-content {
+    overflow: initial;
+}
+#site-content, .posts-container {
+  overflow: initial !important;
+}
