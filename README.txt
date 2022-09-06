@@ -28,7 +28,10 @@ You have to put the four different selector from settings
 That's it done! for more support and information you can contact us [Support] (https://www.speakbd.com/contact)
 
 
-Display Sticky Sidebar
+Screenshots:
+
+Backend screenshot- [https://prnt.sc/bJ7fGWtrgwh4]
+Frontend screenshot- [https://prnt.sc/Z50hQrruuAjN]
 
 
 
