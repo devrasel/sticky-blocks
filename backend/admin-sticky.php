@@ -49,7 +49,7 @@
 	$user = wp_get_current_user();
 	$allowed_roles = array( 'administrator' );
 	if (!empty($_POST['delstktid']) && array_intersect( $allowed_roles, $user->roles ) ) {
-		$stk_id = esc_html($_POST['delstktid']);
+		$stk_id = sanitize_text_field($_POST['delstktid']);
 		$sqldelAction = $wpdb->delete( $table_name, [ 'id' => $stk_id ], [ '%d' ] );
 
 		if ($sqldelAction == true){
@@ -169,8 +169,8 @@
 		border: 1px solid red;
 	}
 	</style>
-	<span style="display:none;" id="stkyr"><?php if(!empty($succStky)) {echo $succStky; }else{ echo $failedStky;} ?></span>
-    <span style="display:none;" id="stkyrfailed"><?php if(!empty($delmsg)) {echo $delmsg; }else{ echo $delmsgfail;} ?></span>
+	<span style="display:none;" id="stkyr"><?php if(!empty($succStky)) {echo wp_kses_post($succStky); }else{ echo wp_kses_post($failedStky);} ?></span>
+    <span style="display:none;" id="stkyrfailed"><?php if(!empty($delmsg)) {echo wp_kses_post($delmsg); }else{ echo wp_kses_post($delmsgfail);} ?></span>
 </div> 
 
 <script>
