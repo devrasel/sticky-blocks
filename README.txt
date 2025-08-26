@@ -1,14 +1,14 @@
 ===  Sticky Sidebar for Ads and Blocks ===
 Contributors: wprasel
 Donate link: https://www.webextended.com/
-Tags: sticky blocks, sticky anything, sticky sidebar, sidebar sticky, sticky widget, widget, sticky ads
+Tags: sticky, ads, widget, block, sidebar
 Requires at least: 5.6
 Tested up to: 6.8.2
 Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-
+Easily create sticky blocks or widgets on your WordPress site with full customization.
 
 == Description ==
 
