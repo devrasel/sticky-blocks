@@ -8,6 +8,10 @@
 .post-template-default #site-content {
     overflow: initial;
 }
-#site-content, .posts-container {
-  overflow: initial !important;
+#site-content, .posts-container, #main-content {
+  overflow: visible !important;
+}
+
+.stickyBlockWrapper > * {
+    overflow: visible !important;
 }
